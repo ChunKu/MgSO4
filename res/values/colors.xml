@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <resources>
+        <color name="TitleBarColor">#66c81e</color>
+        <color name="StepBarColor">#b2b2b2</color>
+        <color name="LightGrey">#dbdbdb</color>
+        <color name="Black">#000000</color>
+        <color name="White">#ffffff</color>
+        <color name="Red">#ff0000</color>
+        <color name="Yellow">#ffff00</color>
+    </resources>

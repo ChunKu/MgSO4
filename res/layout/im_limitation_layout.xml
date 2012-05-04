@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center|fill"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/im_limitation_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/TitleBarColor"
+            android:padding="10px"
+            android:text="Administering Magnesium Sulfate"
+            android:textColor="@color/Black"
+            android:textSize="25px"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/StepBarColor"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/im_limitation_screen_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/StepBarColor"
+            android:paddingLeft="10px"
+            android:text="Screen 3/6"
+            android:textColor="@color/Black"
+            android:textSize="25px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/instruction_warning_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/LightGrey"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/im_limitation_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10px"
+            android:layout_marginLeft="25px"
+            android:layout_marginRight="25px"
+            android:layout_marginTop="10px"
+            android:background="@color/White"
+            android:padding="10px"
+            android:text="TextView"
+            android:textColor="@color/Red"
+            android:textSize="25px" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/IM_limitation_question"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="25px"
+                android:paddingRight="25px"
+                android:paddingTop="10px"
+                android:text="@string/IM_limitation_question"
+                android:textColor="@color/Black"
+                android:textSize="25px" />
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/Black" >
+
+            <Button
+                android:id="@+id/NextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="5px"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="5px"
+                android:onClick="goToNextPage"
+                android:text="@string/NextButtonText"/>
+
+            <Button
+                android:id="@+id/BackButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="5dp"
+                android:onClick="backToPreviousPage"
+                android:text="@string/BackButtonText" android:alpha="0.5"/>
+
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/limitation_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scrollView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="46dp" >
+
+            <RadioButton
+                android:id="@+id/YesRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YES"
+                android:textColor="@color/Black" />
+
+            <RadioButton
+                android:id="@+id/NoRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NO"
+                android:textColor="@color/Black" />
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center|fill"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/TitleBarColor"
+            android:padding="10px"
+            android:text="Administering Magnesium Sulfate"
+            android:textColor="@color/Black"
+            android:textStyle="bold" android:textSize="25px"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Questions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/LightGrey"
+        android:paddingBottom="25px"
+        android:paddingLeft="10px"
+        android:paddingRight="10px"
+        android:paddingTop="25px"
+        android:text="TextView"
+        android:textColor="@color/Black"
+        android:textSize="25px" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White" >
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/relativeLayout1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:padding="50px" >
+
+            <RadioButton
+                android:id="@+id/IVRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/IV"
+                android:textColor="@color/Black"
+                android:textSize="25px" />
+
+            <RadioButton
+                android:id="@+id/IMRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/IM"
+                android:textColor="@color/Black"
+                android:textSize="25px" />
+
+            <RadioButton
+                android:id="@+id/MaintenanceRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Maintenance"
+                android:textColor="@color/Black"
+                android:textSize="25px" />
+
+        </RadioGroup>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/Black" >
+
+            <Button
+                android:id="@+id/NextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="5px"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="5px"
+                android:text="@string/NextButtonText"
+                android:onClick="nextstep" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

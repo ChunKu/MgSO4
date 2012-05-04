@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center|fill"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/concentration_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/TitleBarColor"
+            android:padding="10px"
+            android:text="Administering Magnesium Sulfate"
+            android:textColor="@color/Black"
+            android:textSize="25px"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/concentration_screen_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/StepBarColor"
+        android:paddingLeft="10px"
+        android:text="Screen 2/6"
+        android:textColor="@color/Black"
+        android:textSize="25px" />
+
+    <TextView
+        android:id="@+id/concentration_questions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/LightGrey"
+        android:paddingBottom="25px"
+        android:paddingLeft="10px"
+        android:paddingRight="10px"
+        android:paddingTop="25px"
+        android:text="TextView"
+        android:textColor="@color/Black"
+        android:textSize="25px" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/Black" >
+
+            <Button
+                android:id="@+id/NextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="5px"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="5px"
+                android:onClick="goToNextPage"
+                android:text="@string/NextButtonText"/>
+
+            <Button
+                android:id="@+id/BackButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="5dp"
+                android:alpha="0.5"
+                android:onClick="backToPreviousPage"
+                android:text="@string/BackButtonText" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/relativeLayout1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:padding="50px" >
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt = "@string/spinner_name" />
+
+            <LinearLayout
+                android:id="@+id/linearlayout_spec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/spec_concentration"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number" >
+
+                    <requestFocus />
+                </EditText>
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="%" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
